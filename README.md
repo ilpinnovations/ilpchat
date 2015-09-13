@@ -18,7 +18,7 @@ The application has following functions:-
 •	If you uninstalled the application from the phone and want to login again. Your entered credentials will be match with the saved credentials and if they are same then you will be logged in.
 
 
-API USED IN APPLICATION:-
+API USED IN APPLICATION:
 
 Parse API
 
