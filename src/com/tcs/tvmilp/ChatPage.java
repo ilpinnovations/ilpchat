@@ -662,7 +662,7 @@ public class ChatPage extends Activity {
 				counter++;
 				ParseObject currentObject = assoclist.get(arg0);
 
-				String user = currentObject.getString("username");
+				String user = currentObject.getString("name");
 				int maxValue = assoclist.size();
 				if (currentObject != null) {
 					if (currentObject.getString("filetype") != null)
