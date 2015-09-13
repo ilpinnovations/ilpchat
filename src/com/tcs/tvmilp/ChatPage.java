@@ -485,7 +485,7 @@ public class ChatPage extends Activity {
 	// database
 	public void saveData() {
 		ParseObject po = new ParseObject(tableName);
-		po.put("username", ParseUser.getCurrentUser().getUsername().toString());
+		po.put("username", ParseUser.getCurrentUser().get("name"));
 		po.put("text", msg);
 		po.put("filetype", "text");
 
@@ -662,7 +662,7 @@ public class ChatPage extends Activity {
 				counter++;
 				ParseObject currentObject = assoclist.get(arg0);
 
-				String user = currentObject.getString("name");
+				String user = currentObject.getString("username");
 				int maxValue = assoclist.size();
 				if (currentObject != null) {
 					if (currentObject.getString("filetype") != null)
@@ -677,8 +677,7 @@ public class ChatPage extends Activity {
 							if (currentObject
 									.getString("username")
 									.toString()
-									.equals(ParseUser.getCurrentUser()
-											.getUsername().toString())) {
+									.equals(ParseUser.getCurrentUser().get("name"))) {
 
 								System.out.println("sent");
 								arg1 = getLayoutInflater().inflate(
@@ -1087,8 +1086,7 @@ public class ChatPage extends Activity {
 						if (arg0 != 1) {
 							try {
 								if (currentObject.getString("username").equals(
-										ParseUser.getCurrentUser()
-												.getUsername().toString())) {
+										ParseUser.getCurrentUser().get("name"))) {
 									arg1 = getLayoutInflater().inflate(
 											R.layout.chatitemsent, null);
 								} else {
@@ -1536,8 +1534,7 @@ public class ChatPage extends Activity {
 						image);
 				imageFile.saveInBackground();
 				ParseObject po = new ParseObject(tableName);
-				po.put("username", ParseUser.getCurrentUser().getUsername()
-						.toString());
+				po.put("username", ParseUser.getCurrentUser().get("name"));
 				fileName = file.getName();
 				po.put("filename", fileName);
 				long fileSize = file.getTotalSpace();
@@ -1654,8 +1651,7 @@ public class ChatPage extends Activity {
 					e1.printStackTrace();
 				}
 				ParseObject po = new ParseObject(tableName);
-				po.put("username", ParseUser.getCurrentUser().getUsername()
-						.toString());
+				po.put("username", ParseUser.getCurrentUser().get("name"));
 
 				po.put("filename", fileName);
 				po.put("filepath", filePath);
