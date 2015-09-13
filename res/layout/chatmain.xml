@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="10"
+    android:background="@drawable/chat_background"
+    android:gravity="left|right"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="1.5"
+        android:background="@color/myblue"
+        android:gravity="left|right"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:orientation="horizontal"
+           android:layout_weight="1.4"
+             >
+
+            <Button
+                android:id="@+id/blist"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/list_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" 
+            android:layout_weight="0.1"
+            >
+             <Button
+            android:id="@+id/battach"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/attach" />
+        </LinearLayout>
+
+       
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mychatlinear"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <ListView
+            android:id="@+id/chatmainlist"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:divider="@color/ripple_material_dark"
+            android:dividerHeight="5dp"
+            android:padding="5dp"
+           
+            tools:listitem="@layout/chatrecieve" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/msgedittext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:textColor="@color/Black"
+            android:textSize="20dp" >
+        </EditText>
+
+        <Button
+            android:id="@+id/btnsend"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/send_icon" />
+    </LinearLayout>
+
+</LinearLayout>

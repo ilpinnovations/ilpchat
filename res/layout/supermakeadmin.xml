@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/myblue"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MAKE FACULTY ADMIN"
+        android:textSize="20dp"
+        android:textColor="@color/Black"
+        android:layout_gravity="center_horizontal"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLEASE ENTER EMPLOYEE-ID"
+        android:textSize="20dp"
+        android:textColor="@color/Black"
+         android:layout_gravity="center_horizontal"
+         />
+
+    <EditText
+        android:id="@+id/superadminsearchedittext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grouplistitemshape"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:textColor="@color/Black"
+        android:layout_margin="50dp"
+         />
+
+    <Button
+        android:id="@+id/buttonsupermakeadmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/buttonshape"
+        android:text="MAKE ADMIN"
+        android:textColor="@color/Black"
+         />
+    <Button
+        android:id="@+id/buttonsupergrouplist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/buttonshape"
+        android:text="GROUP LIST"
+        android:textColor="@color/Black"
+         />
+
+    
+
+</LinearLayout>

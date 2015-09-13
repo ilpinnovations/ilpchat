@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="500dp"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+     android:background="@color/WhiteSmoke"
+     >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="60dp"
+        android:text="DELETE MESSAGE?" 
+          android:textColor="@color/Black"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttondeleteyes"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/buttonshape"
+            android:text="YES"
+            android:textColor="@color/Black" />
+
+        <Button
+            android:id="@+id/buttondeleteno"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshape"
+            android:text="NO"
+            android:textColor="@color/Black" />
+    </LinearLayout>
+
+</LinearLayout>
