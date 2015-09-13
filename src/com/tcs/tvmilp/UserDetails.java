@@ -90,7 +90,8 @@ public class UserDetails extends Activity {
 						String uhostel=po.getString("hostel");
 						String uphone=po.getString("phone");
 						String ulg=po.getString("L_G");
-					    name.setText(username);
+						String uname=po.getString("name");
+					    name.setText(uname);
 					    email.setText(uemail);
 					    hostel.setText(uhostel);
 					    phone.setText(uphone);
