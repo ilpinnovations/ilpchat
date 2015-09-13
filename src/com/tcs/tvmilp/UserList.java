@@ -126,12 +126,12 @@ public class UserList extends Activity{
 				if(arg1!=null)
 				{
 					dia.dismiss();
-					Toast.makeText(getApplicationContext(), arg1.toString(), Toast.LENGTH_LONG).show();
+					//Toast.makeText(getApplicationContext(), arg1.toString(), Toast.LENGTH_LONG).show();
 					
 				}
 				if(list==null)
 				{
-					Toast.makeText(getApplicationContext(), "No user in database", Toast.LENGTH_LONG).show();
+					//Toast.makeText(getApplicationContext(), "No user in database", Toast.LENGTH_LONG).show();
 				}
 				else
 				{
@@ -186,7 +186,7 @@ public class UserList extends Activity{
 		System.out.println("TextView is working fine");
 		//now changing the name of each field by modifying the textview.
 
-		username.setText(user.getUsername());
+		username.setText(user.getString("name"));
 		
 		
 		return arg1;
